@@ -6,24 +6,21 @@ def menu():
     print("4. Solving The Roots Of Equations")
     print("5. Geometry")
     print("6. Unit Converter")
-    print("7. Factorial Finder")
-    print("8. Exit")
-    opt = input("Enter The Category:")
-    if opt == "1":
+    print("7. Exit")
+    chos = input("Enter The Type of calculator you want:")
+    if chos == "1":
         normal()
-    elif opt == "2":
+    elif chos == "2":
         scientific()
-    elif opt == "3":
+    elif chos == "3":
         graphingcalc()
-    elif opt == "4":
+    elif chos == "4":
         rootsolve()
-    elif opt == "5":
+    elif chos == "5":
         geometry()
-    elif opt == "6":
-        uc()
-    elif opt == "7":
-        factorial()    
-    elif opt == "8":
+    elif chos == "6":
+        uc()    
+    elif chos == "7":
         exit()
     else:
         menu()
@@ -45,37 +42,37 @@ def uc():
     print("14. Electric Force")
     print("15.Gravitational Force")
     print("16. Exit")
-    index = input("Index:")
-    if index == "1":
+    dex = input("Which function do you want:")
+    if dex == "1":
         print("Check the file named multiconv.txt")
         unitmenu()
-    elif index == "2":
+    elif dex == "2":
         length()
-    elif index == "3":
+    elif dex == "3":
         area()
-    elif index == "4":
+    elif dex == "4":
         temperature()
-    elif index == "5":
+    elif dex == "5":
         kinematicviscosity()
-    elif index == "6":
+    elif dex == "6":
         dynamicviscosity()
-    elif index == "7":
+    elif dex == "7":
         volumetricgasflow()
-    elif index == "8":
+    elif dex == "8":
         torque()
-    elif index == "9":
+    elif dex == "9":
         massflow()
-    elif index == "10":
+    elif dex == "10":
         density()
-    elif index == "11":
+    elif dex == "11":
         mass()
-    elif index == "12":
+    elif dex == "12":
         speed()
-    elif index == "13":
+    elif dex == "13":
         volume()
-    elif index == "14":
+    elif dex == "14":
         elec()
-    elif index == "15":
+    elif dex == "15":
         gravity()        
     else:
         exit()
@@ -86,6 +83,11 @@ def gravity():
     G=6.673*(10**-11)
     f=(G*m1*m2)/(r**2)
     print("Hence, the gravitational force is: ",f,"N")
+    msg = input("1. Go Back 2. Recalculate:")
+    if msg == "1":
+            uc()
+    else:
+            gravity()   
     gravity()
 def elec():
     c1=float(input("Enter the first charge: "))
@@ -94,7 +96,11 @@ def elec():
     K=8.9875517923*(10**9)
     f=(K*c1*c2)/(r**2)
     print("Hence, the electrostatic force is: ",f,"N","m^2","C^-2")
-    elec()
+    msg = input("1. Go Back 2. Recalculate:")
+    if msg == "1":
+            uc()
+    else:
+         elec()
 def length():
     print("Which unit do you have:")
     print("1. Millimeters\n"
@@ -124,8 +130,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "2":
         unit1 = 10
         unit2 = 0.01
@@ -143,8 +152,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "3":
         unit1 = 1000
         unit2 = 100
@@ -162,8 +174,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "4":
         unit1 = 1000000
         unit2 = 100000
@@ -181,8 +196,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "5":
         unit1 = 25.4
         unit2 = 2.54
@@ -200,8 +218,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "6":
         unit1 = 304.8
         unit2 = 30.48
@@ -219,8 +240,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "7":
         unit1 = 914.4
         unit2 = 91.44
@@ -238,8 +262,11 @@ def length():
         print("in FEET is:" + str(value * unit6))
         print("in YARD is:" + str(value * unit7))
         print("in MILE is:" + str(value * unit8))
-        input("Press Enter To Continue")
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
     elif index == "8":
         unit1 = 1609344
         unit2 = 160934.4
@@ -257,10 +284,11 @@ def length():
         print("in FEET is:"+str(value * unit6))
         print("in YARD is:"+str(value * unit7))
         print("in MILE is:"+str(value * unit8))
-        input("Press Enter To Continue")
-        length()
-    else:
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            length()
 def area():
     print("Which unit do you have:")
     print("1. Millimeter square\n"
@@ -284,7 +312,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
     elif index == "2":
         unit1 = 100
         unit2 = 1
@@ -298,7 +330,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-        area()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
 
     elif index == "3":
         unit1 = 1000000
@@ -313,7 +349,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-        area()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
 
     elif index == "4":
         unit1 = 645.16
@@ -328,7 +368,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-        area()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
 
     elif index == "5":
         unit1 = 92903
@@ -343,7 +387,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-        area()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
 
     elif index == "6":
         unit1 = 836127
@@ -358,9 +406,11 @@ def area():
         print("in INCH^2 is:" + str(value * unit4))
         print("in FEET^2 is:" + str(value * unit5))
         print("in YARD^2 is:" + str(value * unit6))
-        area()
-    else:
-        area()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            area()
 def temperature():
     print("Choose the unit given")
     print("1. Celsius")
@@ -372,19 +422,29 @@ def temperature():
         print("In Celsius is:" + str(value))
         print("In Fahrenheit is:" + str((value * 9/5) + 32))
         print("In Kelvin is:" + str(value + 273.15))
-        temperature()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            temperature()
     elif index == "2":
         print("In Celsius is:" + str((value-32)*(5/9)))
         print("In Fahrenheit is:" + str(value))
         print("In Kelvin is:" + str((value + 459.67)/1.8))
-        temperature()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            temperature()
     elif index == "3":
         print("In Celsius is:" + str(value - 273.15))
         print("In Fahrenheit is:" + str((1.8 * value) - 459.67))
         print("In Kelvin is:" + str(value))
-        temperature()
-    else:
-        temperature()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            temperature()
 def kinematicviscosity():
     print("Choose the unit given")
     print("1. Centistroke")
@@ -398,27 +458,41 @@ def kinematicviscosity():
         print("In Stroke is:" + str(value * 0.01))
         print("In Foot Square / sec is:" + str(value * 0.00001))
         print("In Metre square / sec is:" + str(value * 0.000001))
-        kinematicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            kinematicviscosity()
     elif index == "2":
         print("In Centistroke is:" + str(value * 100))
         print("In Stroke is:" + str(value))
         print("In Foot Square / sec is:" + str(value * 0.001076))
         print("In Metre square / sec is:" + str(value * 0.0001))
-        kinematicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            kinematicviscosity()
     elif index == "3":
         print("In Centistroke is:" + str(value * 92903))
         print("In Stroke is:" + str(value * 929.03))
         print("In Foot Square / sec is:" + str(value))
         print("In Metre square / sec is:" + str(value * 0.092903))
-        kinematicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            kinematicviscosity()
     elif index == "4":
         print("In Centistroke is:" + str(value * 1000000))
         print("In Stroke is:" + str(value * 10000))
         print("In Foot Square / sec is:" + str(value * 10.76392))
         print("In Metre square / sec is:" + str(value))
-        kinematicviscosity()
-    else:
-        kinematicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            kinematicviscosity()
 def dynamicviscosity():
     print("Choose the unit given")
     print("1. Centipoise")
@@ -430,19 +504,29 @@ def dynamicviscosity():
         print("In Centipoise is:" + str(value))
         print("In Poise is:" + str(value * 0.01))
         print("In Pound square/ sec is:" + str(value * 0.000672))
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            dynamicviscosity()
     elif index == "2":
         print("In Centipoise is:" + str(value * 100))
         print("In Poise is:" + str(value))
         print("In Pound square/ sec is:" + str(value * 0.067197))
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            dynamicviscosity()
     elif index == "3":
         print("In Centipoise is:" + str(value * 1488.16))
         print("In Poise is:" + str(value * 14.8816))
         print("In Pound square/ sec is:" + str(value))
-        dynamicviscosity()
-    else:
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            dynamicviscosity()
 def volumetricgasflow():
     print("Choose the unit given")
     print("1. Normal metre cube/hour")
@@ -454,19 +538,29 @@ def volumetricgasflow():
         print("In Normal metre cube/hour is:" + str(value))
         print("In Standard cubic feet/hour is:" + str(value * 35.31073))
         print("In Standard cubic feet/minute is:" + str(value * 0.588582))
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volumetricgasflow()
     elif index == "2":
         print("In Normal metre cube/hour is:" + str(value * 0.02832))
         print("In Standard cubic feet/hour is:" + str(value))
         print("In Standard cubic feet/minute is:" + str(value * 0.016669))
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volumetricgasflow()
     elif index == "3":
         print("In Normal metre cube/hour is:" + str(value * 1.699))
         print("In Standard cubic feet/hour is:" + str(value * 59.99294))
         print("In Standard cubic feet/minute is:" + str(value))
-        dynamicviscosity()
-    else:
-        dynamicviscosity()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volumetricgasflow()
 def torque():
     print("Choose the unit given")
     print("1. Newton metre")
@@ -480,27 +574,41 @@ def torque():
         print("In Kilogram force metre is:" + str(value * 0.101972))
         print("In Foot pound is:" + str(value * 0.737561))
         print("In Inch pound is:" + str(value * 8.850732))
-        torque()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            torque()
     elif index == "2":
         print("In Newton metre is:" + str(value * 9.80665))
         print("In Kilogram force metre is:" + str(value))
         print("In Foot pound is:" + str(value * 7.233003))
         print("In Inch pound is:" + str(value * 86.79603))
-        torque()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            torque()
     elif index == "3":
         print("In Newton metre is:" + str(value * 1.35582))
         print("In Kilogram force metre is:" + str(value * 0.138255))
         print("In Foot pound is:" + str(value))
         print("In Inch pound is:" + str(value * 12))
-        torque()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            torque()
     elif index == "4":
         print("In Newton metre is:" + str(value * 0.112985))
         print("In Kilogram force metre is:" + str(value * 0.011521))
         print("In Foot pound is:" + str(value * 0.083333))
         print("In Inch pound is:" + str(value))
-        torque()
-    else:
-        torque()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            torque()
 def massflow():
     print("Choose the unit given")
     print("1. Kilogram/hour")
@@ -514,28 +622,41 @@ def massflow():
         print("In Pound/hour is:" + str(value * 2.204586))
         print("In Kilogram/second  is:" + str(value * 0.000278))
         print("In Ton/hour is:" + str(value * 0.001))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            massflow()
     elif index == "2":
         print("In Kilogram/hour is:" + str(value * 0.4536))
         print("In Pound/hour is:" + str(value))
         print("In Kilogram/second  is:" + str(value * 0.000126))
         print("In Ton/hour is:" + str(value * 0.000454))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            massflow()
     elif index == "3":
         print("In Kilogram/hour is:" + str(value * 3600))
         print("In Pound/hour is:" + str(value * 7936.508))
         print("In Kilogram/second  is:" + str(value))
         print("In Ton/hour is:" + str(value * 3.6))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            massflow()
     elif index == "4":
         print("In Kilogram/hour is:" + str(value * 1000))
         print("In Pound/hour is:" + str(value * 2204.586))
         print("In Kilogram/second  is:" + str(value * 0.277778))
         print("In Ton/hour is:" + str(value))
-        massflow()
-
-    else:
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            massflow()
 def density():
     print("Choose the unit given")
     print("1. Gram/millilitre")
@@ -549,28 +670,41 @@ def density():
         print("In Kilogram/metre cube is:" + str(value * 1000))
         print("In Pound/foot cube  is:" + str(value * 62.42197))
         print("In Pound/inch cube is:" + str(value * 0.036127))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            density()
     elif index == "2":
         print("In Gram/millilitre is:" + str(value * 0.001))
         print("In Kilogram/metre cube is:" + str(value))
         print("In Pound/foot cube  is:" + str(value * 0.062422))
         print("In Pound/inch cube is:" + str(value * 0.000036))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            density()
     elif index == "3":
         print("In Gram/millilitre is:" + str(value * 0.01602))
         print("In Kilogram/metre cube is:" + str(value * 16.02))
         print("In Pound/foot cube  is:" + str(value))
         print("In Pound/inch cube is:" + str(value * 0.000579))
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            density()
     elif index == "4":
         print("In Gram/millilitre is:" + str(value * 27.68))
         print("In Kilogram/metre cube is:" + str(value * 27680))
         print("In Pound/foot cube  is:" + str(value * 1727.84))
         print("In Pound/inch cube is:" + str(value))
-        massflow()
-
-    else:
-        massflow()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            density()
 def mass():
     print("Which unit do you have:")
     print("1. Grams\n"
@@ -591,7 +725,11 @@ def mass():
         print("in Long ton is:" + str(value * 9.84e-07))
         print("in Pounds is:" + str(value * 0.002205))
         print("in Ounces is:" + str(value * 0.035273))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "2":
 
         print("in Grams is:" + str(value * 1000))
@@ -601,7 +739,11 @@ def mass():
         print("in Long ton is:" + str(value * 0.000984))
         print("in Pounds is:" + str(value * 2.204586))
         print("in Ounces is:" + str(value * 35.27337))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "3":
 
         print("in Grams is:" + str(value * 1000000))
@@ -611,7 +753,11 @@ def mass():
         print("in Long ton is:" + str(value * 0.984252))
         print("in Pounds is:" + str(value * 2204.586))
         print("in Ounces is:" + str(value * 35273.37))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "4":
 
         print("in Grams is:" + str(value * 907200))
@@ -621,7 +767,11 @@ def mass():
         print("in Long ton is:" + str(value * 0.892913))
         print("in Pounds is:" + str(value * 2000))
         print("in Ounces is:" + str(value * 32000))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "5":
 
         print("in Grams is:" + str(value * 1016000))
@@ -631,7 +781,11 @@ def mass():
         print("in Long ton is:" + str(value))
         print("in Pounds is:" + str(value * 2239.859))
         print("in Ounces is:" + str(value * 35837.74))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "6":
         print("in Grams is:" + str(value * 453.6))
         print("in Kilograms is:" + str(value * 0.4536))
@@ -640,7 +794,11 @@ def mass():
         print("in Long ton is:" + str(value * 0.000446))
         print("in Pounds is:" + str(value))
         print("in Ounces is:" + str(value * 16))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
     elif index == "7":
         print("in Grams is:" + str(value * 28))
         print("in Kilograms is:" + str(value * 0.02835))
@@ -649,9 +807,11 @@ def mass():
         print("in Long ton is:" + str(value * 0.000028))
         print("in Pounds is:" + str(value * 0.0625))
         print("in Ounces is:" + str(value))
-        mass()
-    else:
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            mass()
 def speed():
     print("Which unit do you have:")
     print("1. Meter/second\n"
@@ -669,7 +829,11 @@ def speed():
         print("in Foot/second is:" + str(value * 3.28084))
         print("in Foot/minute  is:" + str(value * 196.8504))
         print("in Miles/hour is:" + str(value * 2.237136))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
     elif index == "2":
 
         print("in Meter/second is:" + str(value * 0.01667))
@@ -678,7 +842,11 @@ def speed():
         print("in Foot/second is:" + str(value * 0.054692))
         print("in Foot/minute  is:" + str(value * 3.281496))
         print("in Miles/hour is:" + str(value * 0.037293))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
     elif index == "3":
 
         print("in Meter/second is:" + str(value * 0.2778))
@@ -687,7 +855,11 @@ def speed():
         print("in Foot/second is:" + str(value * 0.911417))
         print("in Foot/minute  is:" + str(value * 54.68504))
         print("in Miles/hour is:" + str(value * 0.621477))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
     elif index == "4":
 
         print("in Meter/second is:" + str(value * 0.3048))
@@ -696,7 +868,11 @@ def speed():
         print("in Foot/second is:" + str(value))
         print("in Foot/minute  is:" + str(value * 60))
         print("in Miles/hour is:" + str(value * 0.681879))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
     elif index == "5":
 
         print("in Meter/second is:" + str(value * 0.00508))
@@ -705,7 +881,11 @@ def speed():
         print("in Foot/second is:" + str(value * 0.016667))
         print("in Foot/minute  is:" + str(value))
         print("in Miles/hour is:" + str(value * 0.016667))
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
     elif index == "6":
         print("in Meter/second is:" + str(value * 0.447))
         print("in Meter/minute is:" + str(value * 26.81464))
@@ -713,10 +893,14 @@ def speed():
         print("in Foot/second is:" + str(value * 1.466535))
         print("in Foot/minute  is:" + str(value * 87.99213))
         print("in Miles/hour is:" + str(value))
-        mass()
-    else:
-        mass()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            speed()
 def volume():
+    Print("Sorry for the inconvinience under build check in version 2")
+  """
     print("Which unit do you have:")
     print("1. Centimetre Cube\n"
           "2. Metre Cube\n"
@@ -737,7 +921,11 @@ def volume():
         print("in FEET is:" + str(value * 0.000264))
         print("in YARD is:" + str(value * 0.00022))
         print("in MILE is:" + str(value * 0.000006))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "2":
         print("in MM is:" + str(value * 1000000))
         print("in CM is:" + str(value))
@@ -747,7 +935,11 @@ def volume():
         print("in FEET is:" + str(value * 264))
         print("in YARD is:" + str(value * 220))
         print("in MILE is:" + str(value * 6.29))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "3":
         print("in MM is:" + str(value * 1000))
         print("in CM is:" + str(value * 0.001))
@@ -757,7 +949,11 @@ def volume():
         print("in FEET is:" + str(value * 0.264201))
         print("in YARD is:" + str(value * 0.22))
         print("in MILE is:" + str(value * 0.00629))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "4":
         print("in MM is:" + str(value * 16.4))
         print("in CM is:" + str(value * 0.000016))
@@ -767,7 +963,11 @@ def volume():
         print("in FEET is:" + str(value * 0.004329))
         print("in YARD is:" + str(value * 0.003605))
         print("in MILE is:" + str(value * 0.000103))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "5":
         print("in MM is:" + str(value * 28317))
         print("in CM is:" + str(value * 0.028317))
@@ -777,7 +977,11 @@ def volume():
         print("in FEET is:" + str(value * 7.481333))
         print("in YARD is:" + str(value * 6.229712))
         print("in MILE is:" + str(value * 0.178127))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "6":
         print("in MM is:" + str(value * 3785))
         print("in CM is:" + str(value * 0.003785))
@@ -787,7 +991,11 @@ def volume():
         print("in FEET is:" + str(value))
         print("in YARD is:" + str(value * 0.832701))
         print("in MILE is:" + str(value * 0.02381))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "7":
         print("in MM is:" + str(value * 4545))
         print("in CM is:" + str(value * 0.004545))
@@ -797,7 +1005,11 @@ def volume():
         print("in FEET is:" + str(value * 1.20))
         print("in YARD is:" + str(value))
         print("in MILE is:" + str(value * 0.028593))
-        length()
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            volume()
     elif index == "8":
         print("in MM is:" + str(value * 158970))
         print("in CM is:" + str(value * 0.15897))
@@ -807,22 +1019,12 @@ def volume():
         print("in FEET is:" + str(value * 42))
         print("in YARD is:" + str(value * 35))
         print("in MILE is:" + str(value))
-        length()
-    else:
-        length()
-        uc()  
-def factorial():
-    import math
-    print("Welcome to Factorial Finder.")
-    x = input("Enter the number you want to find factorial of:")
-    print ("The factorial of x is : ", end="") 
-    print (math.factorial(x))
-    print("Do you want to go back or re-calculate")
-    msg = input("1. Go Back 2. Recalculate:")
-    if msg == "1":    
-        menu()
-    else:
-        factorial()        
+        input("1. Go Back 2. Recalculate")
+        if msg == "1":
+            uc()
+        else:
+            """
+            volume()         
 def normal():
     print("Welcome To Normal Calculator")
     print("Here you can Add(+), Subtract(-), Multiply(*), Divide(/) and Modulus(%)")
@@ -983,9 +1185,22 @@ def scientific():
     print("6. Dot And Cross Products")
     print("7. Factor Calculator")
     print("8. Multiple Calculator")
-    print("9. Back")
-    print("10. Exit")
+    print("9. Factorial Finder")
+    print("10. Back")
+    print("11. Exit")
 
+    def factorial():
+                   import math
+                   print("Welcome to Factorial Finder.")
+                   x = input("Enter the number you want to find factorial of:")
+                   print ("The factorial of x is : ", end="") 
+                   print (math.factorial(x))
+                   print("Do you want to go back or re-calculate")
+                   msg = input("1. Go Back 2. Recalculate:")
+                   if msg == "1":    
+                                menu()
+                   else:
+                                factorial()  
     def trigno():
         print("This is Trignometry Calculator")
         print("1. Functions")
@@ -1171,7 +1386,9 @@ def scientific():
         factorcalc()
     elif funct == "8":
         multiple()
-    elif funct == "9":
+    elif funct =="9":
+        factorial()    
+    elif funct == "10":
         menu()
     else:
         exit()
