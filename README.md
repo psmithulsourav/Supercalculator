@@ -48,6 +48,8 @@ This is a super calculator(It can do more work than the costliest calculator ava
 <b>Additional Info</b>
 <p>You can only use this app by giving credits to me</p>
 <strong>Authors</strong>
-P S Mithul Sourav
+<ol>
+  <li>P S Mithul Sourav</li>
+  </ol>
 
 
