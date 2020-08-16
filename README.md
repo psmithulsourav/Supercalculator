@@ -4,7 +4,7 @@ This is a super calculator(It can do more work than the costliest calculator ava
 <p>This is my first version more versions will come soon</p>
 <p>This version has following features</p>
 <b>Features</b>
-<ol>
+<ul>
   <li>Normal Calculator: This calculator has normal operators like addition,subtraction.....</li>
   <li>Scientific Calculator:functions=></li>
   1. Trigonometric Functions
@@ -44,4 +44,4 @@ This is a super calculator(It can do more work than the costliest calculator ava
 13. Volume
 14. Electric Force
 15.Gravitational Force
-  
+  </ul>
