@@ -5,8 +5,8 @@ This is a super calculator(It can do more work than the costliest calculator ava
 <p>This version has following features</p>
 <b>Features</b>
 <ol>
-  <li>Normal Calculator: This calculator has normal operators like addition,subtraction.....<li>
-  <li>Scientific Calculator:functions=>
+  <li>Normal Calculator: This calculator has normal operators like addition,subtraction.....</li>
+  <li>Scientific Calculator:functions=></li>
   1. Trigonometric Functions
 2. Logarithms
 3. Squares And Cubes
@@ -15,20 +15,20 @@ This is a super calculator(It can do more work than the costliest calculator ava
 6. Dot And Cross Products
 7. Factor Calculator
 8. Multiple Calculator
-9. Factorial Finder</li>
-<li>Graphing Calculator:functions=>
+9. Factorial Finder
+<li>Graphing Calculator:functions=></li>
   1. Points Plotter
 2. Trigonometric Function Grapher
-3. Addition And Subtraction of Trigonometric Functions</li>
+3. Addition And Subtraction of Trigonometric Functions
   <li>Solving The Roots Of Equations:functions=></li>
-  <li>Geometry:functions=>
+  <li>Geometry:functions=></li>
   1. Two Dimensional Area
 2. Three Dimensional Area
 3. Parallelograms And Triangles
 4. Heron's Formula
 5. Triangle Checker
-  6. Coming soon: Brahmaguptas formula</li>
-  <li>Unit Converter:functions=>
+  6. Coming soon: Brahmaguptas formula
+  <li>Unit Converter:functions=></li>
   1. Multiples Of SI units
 2. Length
 3. Area
@@ -43,5 +43,5 @@ This is a super calculator(It can do more work than the costliest calculator ava
 12. Speed
 13. Volume
 14. Electric Force
-15.Gravitational Force</li>
+15.Gravitational Force
   
