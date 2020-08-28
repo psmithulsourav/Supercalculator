@@ -46,8 +46,8 @@ This is a super calculator(It can do more work than the costliest calculator ava
 15.Gravitational Force
   </ul>
   <p><b><H1>WEB VERSION</H1></b></p>
-  <H1>COMING SOON</H1>
-  <b>RELEASE DATE:DECEMBER 1ST WEEK</b>
+  <H5>COMING SOON</H5>
+  <p><b>RELEASE DATE:DECEMBER 1ST WEEK</b></p>
 <b>Additional Info</b>
 <p>You can only use this app by giving credits to me</p>
 <strong>Authors</strong>
