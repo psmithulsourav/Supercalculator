@@ -45,9 +45,9 @@ This is a super calculator(It can do more work than the costliest calculator ava
 14. Electric Force
 15.Gravitational Force
   </ul>
-  <p><b>WEB VERSION</b></p>
+  <p><b><H1>WEB VERSION</H1></b></p>
   <H1>COMING SOON</H1>
-  <H1>RELEASE DATE:DECEMBER 1ST WEEK</H1>
+  <b>RELEASE DATE:DECEMBER 1ST WEEK</b>
 <b>Additional Info</b>
 <p>You can only use this app by giving credits to me</p>
 <strong>Authors</strong>
