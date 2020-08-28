@@ -50,6 +50,7 @@ This is a super calculator(It can do more work than the costliest calculator ava
   <p><b>RELEASE DATE:DECEMBER 1ST WEEK</b></p>
 <b>Additional Info</b>
 <p>You can only use this app by giving credits to me</p>
+<p>&#169 P S Mithul Sourav 2020</p>
 <strong>Authors</strong>
 <ol>
   <li>P S Mithul Sourav</li>
